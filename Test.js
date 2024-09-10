@@ -35,6 +35,23 @@ var j193 = [
   },
   {
     "from": {
+      "jsonPath": "lineDetails.description",
+      "nodeType": 1,
+      "dataType": "string",
+      "name": "description",
+      "defaultValue": ""
+    },
+    "to": {
+      "jsonPath": "lineDetails.description",
+      "nodeType": 1,
+      "dataType": "string",
+      "name": "description",
+      "defaultValue": ""
+    },
+    "mappingType": "one-to-one"
+  },
+  {
+    "from": {
       "jsonPath": "lineDetails.uom.standardCode",
       "nodeType": 1,
       "dataType": "string",
@@ -8939,6 +8956,1215 @@ var j193 = [
               }
             ],
             "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolversGroup.firstName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "firstName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "firstName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.firstName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "firstName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "firstName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.firstName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "firstName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "firstName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.firstName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "firstName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "firstName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "firstName"
+      ],
+      "nodeType": 1,
+      "dataType": "string",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.firstName",
+      "name": "firstName"
+    },
+    "mappingType": "if-else"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolversGroup.lastName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "lastName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "lastName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.lastName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "lastName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "lastName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.lastName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "lastName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "lastName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.lastName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "lastName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "lastName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "lastName"
+      ],
+      "nodeType": 1,
+      "dataType": "string",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.lastName",
+      "name": "lastName"
+    },
+    "mappingType": "if-else"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolversGroup.emailAddress",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "emailAddress",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "emailAddress"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.emailId",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "emailId",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "emailId"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.emailAddress",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "emailAddress",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "emailAddress"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.emailId",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "emailId",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "emailId"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "emailId"
+      ],
+      "nodeType": 1,
+      "dataType": "string",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.emailId",
+      "name": "emailId"
+    },
+    "mappingType": "if-else"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
           }
         ],
         "assign": [
@@ -9057,6 +10283,409 @@ var j193 = [
       "defaultValue": "",
       "jsonPath": "invoiceBasicDetails.stakeholders.stakeholderType",
       "name": "stakeholderType"
+    },
+    "mappingType": "if-else"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolversGroup.contactCode",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "contactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "contactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.contactCode",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "contactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "contactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.contactCode",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "contactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "contactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.contactCode",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "contactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "contactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"0\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"0\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "contactCode"
+      ],
+      "nodeType": 1,
+      "dataType": "number",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.contactCode",
+      "name": "contactCode"
     },
     "mappingType": "if-else"
   },
@@ -10166,6 +11795,409 @@ var j193 = [
         ],
         "assign": [
           {
+            "jsonPath": "customAttributes.exceptionResolversGroup.groupName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "groupName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "groupName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.fullName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "fullName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "fullName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.groupName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "groupName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "groupName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.fullName",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "fullName",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "fullName"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "name"
+      ],
+      "nodeType": 1,
+      "dataType": "string",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.name",
+      "name": "name"
+    },
+    "mappingType": "if-else"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
             "name": "\"true\"",
             "value": "",
             "children": [
@@ -10503,6 +12535,409 @@ var j193 = [
       "defaultValue": ""
     },
     "mappingType": "one-to-one"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolversGroup.groupId",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "groupId",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "groupId"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.groupId",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "groupId",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "groupId"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.groupId",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "groupId",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "groupId"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.groupId",
+            "nodeType": 1,
+            "dataType": "number",
+            "name": "groupId",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "groupId"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"0\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"0\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "groupId"
+      ],
+      "nodeType": 1,
+      "dataType": "number",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.groupId",
+      "name": "groupId"
+    },
+    "mappingType": "if-else"
   },
   {
     "from": {
@@ -16832,6 +19267,23 @@ var j193 = [
   },
   {
     "from": {
+      "jsonPath": "lineDetails.accountingSplit.description",
+      "nodeType": 1,
+      "dataType": "string",
+      "name": "description",
+      "defaultValue": ""
+    },
+    "to": {
+      "jsonPath": "lineDetails.splitItems.description",
+      "nodeType": 1,
+      "dataType": "string",
+      "name": "description",
+      "defaultValue": ""
+    },
+    "mappingType": "one-to-one"
+  },
+  {
+    "from": {
       "jsonPath": "lineDetails.accountingSplit.cultureCode",
       "nodeType": 1,
       "dataType": "string",
@@ -19856,6 +22308,409 @@ var j193 = [
       "defaultValue": ""
     },
     "mappingType": "one-to-one"
+  },
+  {
+    "from": [
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolversGroup.clientContactCode",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "clientContactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolversGroup",
+              "clientContactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "if"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"exceptionResolver\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"exceptionResolver\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.exceptionResolverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "exceptionResolverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.exceptionResolvers.clientContactCode",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "clientContactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "exceptionResolvers",
+              "clientContactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"Group\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"Group\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApproversGroup.clientContactCode",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "clientContactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApproversGroup",
+              "clientContactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          {
+            "lhs": [
+              {
+                "jsonPath": "stakeHolders.key",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "key",
+                "defaultValue": "",
+                "path": [
+                  "stakeHolders",
+                  "key"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"invoiceApprover\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"invoiceApprover\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "=="
+          },
+          {
+            "lhs": [
+              {
+                "jsonPath": "customAttributes.invoiceApproverType.name",
+                "nodeType": 1,
+                "dataType": "string",
+                "name": "name",
+                "defaultValue": "",
+                "path": [
+                  "customAttributes",
+                  "invoiceApproverType",
+                  "name"
+                ]
+              }
+            ],
+            "rhs": [
+              {
+                "name": "\"User\"",
+                "value": "",
+                "children": [
+                  
+                ],
+                "jsonPath": "\"User\"",
+                "nodeType": 1,
+                "dataType": "string"
+              }
+            ],
+            "operator": "==",
+            "conjunction": "&&"
+          }
+        ],
+        "assign": [
+          {
+            "jsonPath": "customAttributes.invoiceApprovers.clientContactCode",
+            "nodeType": 1,
+            "dataType": "string",
+            "name": "clientContactCode",
+            "defaultValue": "",
+            "path": [
+              "customAttributes",
+              "invoiceApprovers",
+              "clientContactCode"
+            ]
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "elseif"
+      },
+      {
+        "jsonPath": "~",
+        "nodeType": 1,
+        "dataType": "string",
+        "name": "~",
+        "defaultValue": "",
+        "value": "",
+        "children": [
+          
+        ],
+        "condition": [
+          
+        ],
+        "assign": [
+          {
+            "name": "\"0\"",
+            "value": "",
+            "children": [
+              
+            ],
+            "jsonPath": "\"0\"",
+            "nodeType": 1,
+            "dataType": "string"
+          }
+        ],
+        "path": [
+          "~"
+        ],
+        "mapFunction": "else"
+      }
+    ],
+    "to": {
+      "path": [
+        "invoiceBasicDetails",
+        "stakeholders",
+        "clientContactCode"
+      ],
+      "nodeType": 1,
+      "dataType": "string",
+      "defaultValue": "",
+      "jsonPath": "invoiceBasicDetails.stakeholders.clientContactCode",
+      "name": "clientContactCode"
+    },
+    "mappingType": "if-else"
   },
   {
     "from": [
@@ -23479,3058 +26334,5 @@ var j193 = [
       "name": "splitNumber"
     },
     "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.firstName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "firstName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "firstName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.firstName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "firstName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "firstName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.firstName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "firstName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "firstName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.firstName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "firstName",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "firstName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "firstName"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.firstName",
-      "name": "firstName"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.lastName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "lastName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "lastName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.lastName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "lastName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "lastName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.lastName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "lastName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "lastName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.lastName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "lastName",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "lastName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "lastName"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.lastName",
-      "name": "lastName"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.groupName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "groupName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "groupName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.fullName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "fullName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "fullName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.groupName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "groupName",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "groupName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.fullName",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "fullName",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "fullName"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "name"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.name",
-      "name": "name"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.emailAddress",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "emailAddress",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "emailAddress"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.emailId",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "emailId",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "emailId"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.emailAddress",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "emailAddress",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "emailAddress"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.emailId",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "emailId",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "emailId"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "emailId"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.emailId",
-      "name": "emailId"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.contactCode",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "contactCode",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "contactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.contactCode",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "contactCode",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "contactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.contactCode",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "contactCode",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "contactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.contactCode",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "contactCode",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "contactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"0\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"0\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "contactCode"
-      ],
-      "nodeType": 1,
-      "dataType": "number",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.contactCode",
-      "name": "contactCode"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.clientContactCode",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "clientContactCode",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "clientContactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.clientContactCode",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "clientContactCode",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "clientContactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.clientContactCode",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "clientContactCode",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "clientContactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.clientContactCode",
-            "nodeType": 1,
-            "dataType": "string",
-            "name": "clientContactCode",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "clientContactCode"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"0\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"0\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "clientContactCode"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.clientContactCode",
-      "name": "clientContactCode"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "\"User\"",
-                "defaultValue": "",
-                "path": [
-                  "\"User\""
-                ]
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.rank",
-                "nodeType": 1,
-                "dataType": "number",
-                "name": "rank",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "rank"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "jsonPath": "null",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "null",
-                "defaultValue": "",
-                "path": [
-                  "null"
-                ]
-              }
-            ],
-            "operator": "!=",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.rank",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "rank",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "rank"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"0\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"0\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "rank"
-      ],
-      "nodeType": 1,
-      "dataType": "number",
-      "defaultValue": "",
-      "jsonPath": "invoiceBasicDetails.stakeholders.rank",
-      "name": "rank"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": [
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolversGroup.groupId",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "groupId",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolversGroup",
-              "groupId"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "if"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"exceptionResolver\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"exceptionResolver\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.exceptionResolverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "exceptionResolverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.exceptionResolvers.groupId",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "groupId",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "exceptionResolvers",
-              "groupId"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"Group\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"Group\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "customAttributes.invoiceApproversGroup.groupId",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "groupId",
-            "defaultValue": "",
-            "path": [
-              "customAttributes",
-              "invoiceApproversGroup",
-              "groupId"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          {
-            "lhs": [
-              {
-                "jsonPath": "stakeHolders.key",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "key",
-                "defaultValue": "",
-                "path": [
-                  "stakeHolders",
-                  "key"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"invoiceApprover\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"invoiceApprover\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "=="
-          },
-          {
-            "lhs": [
-              {
-                "jsonPath": "customAttributes.invoiceApproverType.name",
-                "nodeType": 1,
-                "dataType": "string",
-                "name": "name",
-                "defaultValue": "",
-                "path": [
-                  "customAttributes",
-                  "invoiceApproverType",
-                  "name"
-                ]
-              }
-            ],
-            "rhs": [
-              {
-                "name": "\"User\"",
-                "value": "",
-                "children": [
-                  
-                ],
-                "jsonPath": "\"User\"",
-                "nodeType": 1,
-                "dataType": "string"
-              }
-            ],
-            "operator": "==",
-            "conjunction": "&&"
-          }
-        ],
-        "assign": [
-          {
-            "jsonPath": "stakeHolders.groupId",
-            "nodeType": 1,
-            "dataType": "number",
-            "name": "groupId",
-            "defaultValue": "",
-            "path": [
-              "stakeHolders",
-              "groupId"
-            ]
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "elseif"
-      },
-      {
-        "jsonPath": "~",
-        "nodeType": 1,
-        "dataType": "string",
-        "name": "~",
-        "defaultValue": "",
-        "value": "",
-        "children": [
-          
-        ],
-        "condition": [
-          
-        ],
-        "assign": [
-          {
-            "name": "\"0\"",
-            "value": "",
-            "children": [
-              
-            ],
-            "jsonPath": "\"0\"",
-            "nodeType": 1,
-            "dataType": "string"
-          }
-        ],
-        "path": [
-          "~"
-        ],
-        "mapFunction": "else"
-      }
-    ],
-    "to": {
-      "path": [
-        "invoiceBasicDetails",
-        "stakeholders",
-        "groupId"
-      ],
-      "nodeType": 1,
-      "dataType": "number",
-      "defaultValue": "0",
-      "jsonPath": "invoiceBasicDetails.stakeholders.groupId",
-      "name": "groupId"
-    },
-    "mappingType": "if-else"
-  },
-  {
-    "from": {
-      "jsonPath": "customAttributes.approverThresholdContractValue.convertedValue",
-      "nodeType": 1,
-      "dataType": "number",
-      "name": "convertedValue",
-      "defaultValue": ""
-    },
-    "to": {
-      "jsonPath": "invoiceBasicDetails.customAttributes.invoiceThreshold",
-      "nodeType": 1,
-      "dataType": "number",
-      "name": "invoiceThreshold",
-      "defaultValue": ""
-    },
-    "mappingType": "one-to-one"
-  },
-  {
-    "from": {
-      "jsonPath": "lineDetails.accountingSplit.description",
-      "nodeType": 1,
-      "dataType": "string",
-      "name": "description",
-      "defaultValue": "",
-      "path": [
-        "lineDetails",
-        "accountingSplit",
-        "description"
-      ]
-    },
-    "to": {
-      "path": [
-        "lineDetails",
-        "splitItems",
-        "description"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "lineDetails.splitItems.description",
-      "name": "description"
-    },
-    "mappingType": "one-to-one",
-    "assignInfo": {
-      
-    }
-  },
-  {
-    "from": {
-      "jsonPath": "lineDetails.description",
-      "nodeType": 1,
-      "dataType": "string",
-      "name": "description",
-      "defaultValue": "",
-      "path": [
-        "lineDetails",
-        "description"
-      ]
-    },
-    "to": {
-      "path": [
-        "lineDetails",
-        "description"
-      ],
-      "nodeType": 1,
-      "dataType": "string",
-      "defaultValue": "",
-      "jsonPath": "lineDetails.description",
-      "name": "description"
-    },
-    "mappingType": "one-to-one",
-    "assignInfo": {
-      
-    }
   }
 ]
